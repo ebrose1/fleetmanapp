@@ -1,0 +1,43 @@
+{
+  "expo": {
+    "name": "Fleet Inspection",
+    "slug": "fleet-inspection-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.yourcompany.fleetinspection",
+      "infoPlist": {
+        "NSCameraUsageDescription": "This app needs camera access to take photos of vehicle issues.",
+        "NSPhotoLibraryUsageDescription": "This app needs photo library access to attach existing photos."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.yourcompany.fleetinspection",
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE"
+      ]
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "The app needs access to your photos to attach vehicle issue documentation."
+        }
+      ]
+    ]
+  }
+}
